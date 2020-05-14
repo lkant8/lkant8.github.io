@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{request_filename} -f
+RewriteRule ^(.*) 											$1											[L]
+RewriteRule ^(([^/]*)+)?$									index.php?a=$1								[L]
+RewriteRule ^page/([^/]+)/?$								index.php?a=page&b=$1						[NC]
+RewriteRule ^(([^/]*)+)?$									index.php?a=redirect&url=$1                 [NC]
