@@ -1,0 +1,57 @@
+<div class="card my-3">
+	<div class="card-header">
+		<div class="row">
+			<div class="col">
+				<div class="font-weight-bold text-muted">General</div>
+			</div>
+			<div class="col-auto font-weight-bold">
+				<a href="https://192.168.1.100/short2/index.php?a=admin&logout=1">Logout</a>
+			</div>
+		</div>
+	</div>
+	<div class="card-body">
+
+		{$msg}
+
+		<form action="{$url}/index.php?a=admin" method="post">
+			<div class="form-group">
+				<label>Title</label>
+				<input type="text" name="title" value="{$currentTitle}" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label>Captcha</label>
+				<select name="captcha" class="form-control">
+					<option value="0" {$coff}>Off</option>
+					<option value="1" {$con}>On</option>
+				</select>
+			</div>
+
+			<hr>
+
+			<div class="form-group">
+				<label>Twitter</label>
+				<input type="text" name="twitter" value="{$twitter}" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label>Facebook</label>
+				<input type="text" name="facebook" value="{$facebook}" class="form-control">
+			</div>
+
+			<hr>
+
+			<div class="form-group">
+				<div class="input-container">Ad Unit #1 <span class="text-muted">(front page - top)</span></div>
+				<textarea  name="ads1" class="form-control">{$ad1}</textarea>
+			</div>
+
+			<div class="form-group">
+				<div class="input-container">Ad Unit #2 <span class="text-muted">(front page - bottom)</span></div>
+				<textarea name="ads2" class="form-control">{$ad2}</textarea>
+			</div>
+
+			<input type="submit" value="Save changes" class="btn btn-primary">
+		</form>
+	</div>
+</div>

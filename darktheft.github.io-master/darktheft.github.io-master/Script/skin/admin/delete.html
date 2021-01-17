@@ -1,0 +1,31 @@
+<div class="card my-3">
+	<div class="card-header">
+		<div class="row">
+			<div class="col">
+				<div class="font-weight-bold text-muted">Delete</div>
+			</div>
+			<div class="col-auto font-weight-bold">
+				<a href="https://192.168.1.100/short2/index.php?a=admin&logout=1">Logout</a>
+			</div>
+		</div>
+	</div>
+	<div class="card-body">
+
+		{$msg}
+
+		<div class="alert alert-info">Enter the Unique ID of a shortened URL (e.q.: {$url}/<strong>UnIQUe1D</strong>)</div>
+
+		<form action="{$url}/index.php?a=admin&b=delete" method="post">
+
+			<div class="form-group">
+
+				<label>Unique URL ID</label>
+				<input type="text" name="delete" class="form-control">
+
+			</div>
+
+			<input type="submit" value="Delete" class="btn btn-danger">
+
+		</form>
+	</div>
+</div>

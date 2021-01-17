@@ -1,0 +1,166 @@
+<script type="text/javascript">
+
+	window.addEventListener('DOMContentLoaded', function () {
+		$(function () {
+
+			$('#short').keypress(function (e) {
+				if (e.which == 13) {
+					send();
+					return false;
+				}
+			});
+			$(document).on('click', '#short-btn', function () {
+				send();
+				return false;
+			});
+
+			$(document).on('click', '.select', function () {
+				$(this).select();
+			});
+
+			$(document).on('click', '#custom-down', function () {
+				$(this).html('<img src="{$url}/images/uparrow.png" />').attr('id', 'custom-up');
+			});
+			$(document).on('click', '#custom-up', function () {
+				$(this).html('<img src="{$url}/images/downarrow.png" />').attr('id', 'custom-down');
+			});
+
+			function send() {
+				var text = $('input#short').val(); // take the content from the link input
+				var custom = $('input#custom').val(); // take the content from the custom input
+				var captcha = $('input#captcha').val(); // take the content from the custom input
+				var captcha_image = $('#captcha-register').html();
+
+				$('#short-btn').html("loading").attr("id", "short-loading");
+
+				$("#loading").html('<div class="preloader"><img src="{$url}/images/preloader.gif" /></div>'); // set the preloader
+
+				$(".short-results").delay(0).animate({"opacity": "0"}, 700); // set the container transparent
+				$(".short-results").empty(); // empty the container
+				$.ajax({
+					type: "POST",
+					url: "{$url}/requests/short.php",
+					data: "short=" + encodeURIComponent(text) + "&custom=" + encodeURI(custom) + "&captcha=" + encodeURI(captcha),
+					cache: false,
+					error: function (html) {
+						$("#loading").html('<div class="info-message">We couldn\'t fetch any data, please try again.</div>');
+						$('#short-loading').html("short").attr("id", "short-btn");
+					},
+					success: function (html) {
+						stats(1);
+						$("#loading").empty(); // empty the preloader container
+						$(".short-results").append(html); // apend the content to the container
+						$(".short-results").delay(0).animate({"opacity": "1"}, 700); // set the container visible
+
+						$('#short-loading').html("short").attr("id", "short-btn");
+
+
+						$('#captcha-register').html(captcha_image);
+					}
+				});
+			}
+
+			function stats(x) {
+				if (x == 0) {
+					$(".today").html('<img src="{$url}/images/preloader.gif" />');
+					$(".total").html('<img src="{$url}/images/preloader.gif" />');
+				} else {
+					$(".today").html('<h3>...</h3>');
+					$(".total").html('<h3>...</h3>');
+				}
+
+				$.ajax({
+					type: "POST",
+					url: "{$url}/requests/stats.php",
+					cache: false,
+					error: function (html) {
+						$(".stats-loading").html('<div class="info-message">We couldn\'t fetch any data, please try again.</div>');
+					},
+					success: function (html) {
+						$(".today").empty();
+						$(".total").empty();
+
+						// $(".stats-results").append(html);
+						$(".today").delay(0).animate({"opacity": "1"}, 700);
+						$(".total").delay(0).animate({"opacity": "1"}, 700);
+
+						$(".today").prepend($(html).filter('.one'));
+						$(".total").prepend($(html).filter('.two'));
+						//console.log($(html).find('.one'));
+					}
+				});
+			}
+
+			stats(0);
+		});
+	});
+</script>
+
+<div class="d-flex align-items-center flex-fill h-100 p-5 p-md-3">
+	<div class="mx-auto">{$ad1}</div>
+
+	<div class="row">
+		<div class="col-12 mb-5">
+			<div class="form-row">
+				<div class="col-12 col-md">
+					<div class="form-row">
+						<div class="col-8">
+							<input type="text" id="short" autocomplete="off" autocapitalize="none" spellcheck="false" name="url" class="form-control form-control-lg font-size-lg" placeholder="Enter your long URL">
+						</div>
+
+						<div class="col-4">
+							<input type="text" id="custom" class="form-control form-control-lg font-size-lg" placeholder="Alias">
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-auto">
+					<div class="form-row">
+						{$captcha}
+						<div class="col-12 col-md">
+							<button class="short-button btn btn-primary btn-lg btn-block font-size-lg mt-3 mt-md-0 text-capitalize" id="short-btn">Short</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="loading"></div>
+
+			<div class="short-results"></div>
+		</div>
+
+
+		<div class="col-12 col-md-6 mb-3 mb-md-0">
+			<div class="card">
+				<div class="card-body">
+					<div class="today"></div>
+				</div>
+				<div class="card-footer text-muted font-weight-bold">
+					TODAY
+				</div>
+			</div>
+		</div>
+		<div class="col-12 col-md-6">
+			<div class="card">
+				<div class="card-body">
+					<div class="total"></div>
+				</div>
+				<div class="card-footer text-muted font-weight-bold">
+					TOTAL
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mx-auto">{$ad2}</div>
+</div>
+
+<script>
+	window.addEventListener('DOMContentLoaded', function () {
+		$(".togglebtn").click(function () {
+			$(".custom-input").slideToggle("slow");
+		});
+		$(".info").click(function () {
+			$(".custom-input").slideToggle("slow");
+		});
+	});
+</script>
