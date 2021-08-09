@@ -7,7 +7,7 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-;(function($, window, document, undefined){
+(function($, window, document, undefined){
 
     var pluginName = 'nivoLightbox',
         defaults = {

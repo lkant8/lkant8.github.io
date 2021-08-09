@@ -47,7 +47,7 @@ a a:focus {
 p {
   font-weight: 400;
   font-family: "Source Sans Pro", sans-serif;
-  margin: 0px;
+  margin: 0;
   font-size: 14px;
 }
 
@@ -112,7 +112,7 @@ ul li, ol li {
 .btn {
   font-size: 14px;
   padding: 10px 30px;
-  border-radius: 0px;
+  border-radius: 0;
   cursor: pointer;
   font-weight: 400;
   color: #fff;
@@ -201,7 +201,7 @@ button:focus {
   text-align: center;
   border-radius: 100%;
   font-size: 16px;
-  margin: 15px 6px 12px 6px;
+  margin: 15px 6px 12px;
   transition: all 0.3s ease-in-out 0s;
   -moz-transition: all 0.3s ease-in-out 0s;
   -webkit-transition: all 0.3s ease-in-out 0s;
@@ -326,7 +326,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 #about .img-thumb img {
   border: 8px solid #fff;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .profile-wrapper {
@@ -334,7 +334,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .profile-wrapper .btn {
-  margin: 10px 10px 0px 0px;
+  margin: 10px 10px 0 0;
 }
 
 .profile-wrapper .btn i {
@@ -344,7 +344,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .about-profile {
   position: relative;
-  margin: 20px 0 20px 0;
+  margin: 20px 0;
 }
 
 .about-profile .pro-title {
@@ -460,7 +460,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .timeline li:last-child {
-  padding: 0 20px 0px 30px;
+  padding: 0 20px 0 30px;
 }
 
 .timeline li:before {
@@ -497,15 +497,15 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .navbar-brand {
   position: relative;
-  padding: 0px;
+  padding: 0;
 }
 
 .top-nav-collapse {
   background: #fff;
   z-index: 999999;
-  top: 0px !important;
+  top: 0 !important;
   min-height: 58px;
-  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 3px 6px 3px rgba(0, 0, 0, 0.06);
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -516,7 +516,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .top-nav-collapse .navbar-brand {
-  top: 0px;
+  top: 0;
 }
 
 .top-nav-collapse .navbar-brand img {
@@ -525,8 +525,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .top-nav-collapse .navbar-nav .nav-link {
   color: #333 !important;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 .top-nav-collapse .navbar-nav .nav-link:hover {
@@ -715,7 +715,7 @@ a.back-to-top:hover, a.back-to-top:focus {
   }
   .navbar-brand {
     position: absolute;
-    padding: 0px 15px;
+    padding: 0 15px;
     top: 0;
   }
   .navbar-brand img {
@@ -758,14 +758,14 @@ a.back-to-top:hover, a.back-to-top:focus {
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background: #0c0808;
   opacity: 0.6;
 }
 
 #hero-area .contents {
-  padding: 175px 0px 120px;
+  padding: 175px 0 120px;
 }
 
 #hero-area .contents h5 {
@@ -789,7 +789,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #hero-area .contents .btn {
-  margin: 25px 0px;
+  margin: 25px 0;
   text-transform: uppercase;
 }
 
@@ -822,7 +822,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 #portfolios .portfolio-item .shot-item {
-  margin: 0px;
+  margin: 0;
 }
 
 #portfolio .mix {
@@ -831,7 +831,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 
 .controls {
   text-align: center;
-  padding: 0px 0px 20px;
+  padding: 0 0 20px;
 }
 
 .controls .active {
@@ -948,7 +948,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   background: #fff;
   border-radius: 4px;
   padding: 48px 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   height: 300px;
   text-align: center;
   transition: all 0.3s ease-in-out 0s;
@@ -988,7 +988,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .services-item:hover {
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 .form-control {
