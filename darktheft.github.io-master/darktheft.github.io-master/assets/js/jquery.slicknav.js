@@ -3,7 +3,7 @@
  * (c) 2015 Josh Cope
  * licensed under MIT
  */
-;(function ($, document, window) {
+(function ($, document, window) {
     var
     // default settings object.
         defaults = {
