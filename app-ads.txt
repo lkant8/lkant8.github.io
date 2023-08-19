@@ -1,1 +1,5 @@
+# AdMob
+google.com, pub-1642591587818243, DIRECT, f08c47fec0942fa0
+# Facebook Audience Network
+
 facebook.com, 104043841152416, DIRECT, c3e20eee3f780d68
