@@ -22,3 +22,6 @@ media.net, 8CUD06Z68, RESELLER
 # Facebook Audience Network
 
 facebook.com, 104043841152416, DIRECT, c3e20eee3f780d68
+
+# google 
+google.com, pub-5607700110837882, DIRECT, f08c47fec0942fa0
