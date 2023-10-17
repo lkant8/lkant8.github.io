@@ -1,8 +1,19 @@
-yandex.com, 105744873, DIRECT
-improvedigital.com, 2031, RESELLER
-betweendigital.com, 43554, RESELLER
-uis.mobfox.com, 165, RESELLER
-Contextweb.com, 562899,RESELLER,89ff185a4c4e857c
-hyperad.tech, 150, RESELLER
-hyperad.tech, 215, RESELLER
-google.com, pub-5533854580432370, RESELLER, f08c47fec0942fa0
+
+# applovin 
+
+applovin.com, 73f3838caf641b04830cf6dac4be71a6, DIRECT
+loopme.com, 11303, RESELLER, 6c8d5f95897a5a3b
+rubiconproject.com, 16356, RESELLER, 0bfd66d529a55807
+rubiconproject.com, 20744, RESELLER, 0bfd66d529a55807
+pubmatic.com, 158154, RESELLER, 5d62403b186f2ace
+pubmatic.com, 158862, RESELLER, 5d62403b186f2ace
+pubmatic.com, 159509, RESELLER, 5d62403b186f2ace
+xandr.com, 13799, RESELLER
+media.net, 8CUD06Z68, RESELLER
+
+# Facebook Audience Network
+
+facebook.com, 104043841152416, DIRECT, c3e20eee3f780d68
+
+# google 
+google.com, pub-5607700110837882, DIRECT, f08c47fec0942fa0
