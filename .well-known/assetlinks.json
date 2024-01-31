@@ -10,5 +10,16 @@
         "03:FC:9B:85:9F:52:15:71:C5:CF:B7:4F:F2:9A:51:9D:A4:C1:97:3A:FF:61:D7:42:13:97:5C:77:D0:CE:3B:1D"
       ]
     }
+  },
+
+   {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "co.sangeet.player",
+      "sha256_cert_fingerprints":
+        ["4F:84:2A:2D:4B:5E:5C:35:DD:A8:1C:D7:41:1B:83:5E:F3:44:8A:42:31:16:93:FB:F1:6E:42:5F:03:96:32:D5"]
+    }
   }
+  
 ]
