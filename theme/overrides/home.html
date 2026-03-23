@@ -35,6 +35,20 @@
       display: none;
     }
   }
+  .tx-landing__recent {
+    list-style: none;
+    padding-left: 0;
+  }
+  .tx-landing__recent li {
+    margin: 0.25rem 0;
+  }
+  .tx-landing__recent a {
+    font-weight: 600;
+  }
+  .tx-landing__recent .post-date {
+    color: var(--md-default-fg-color--light);
+    font-size: 0.85em;
+  }
 </style>
 
 <!-- landing page for landing page -->
@@ -57,25 +71,10 @@
 
       <!-- landing content -->
       <div class="tx-landing__content">
-        <h2>Make your development cycle <b>fast</b>, <b>cost efficient</b>, and <b>secure</b></h2>
-        <p>Cirrus CI is arguably the most technological and flexible Continuous Integration service there is.</p>
-        <p>
-          Start on an infrastructure managed by us and enjoy <a href="/pricing/#compute-credits">per-second billing</a>
-          with <b>no concurrency limits</b>!
-        </p>
-        <p>
-          Grow your product without worrying about infrastructure maintenance and updates. When it's the right time,
-          configure and bring <a href="/guide/supported-computing-services">your own infrastructure</a>.
-        </p>
-        <p><b>Build your Open Source projects on Linux, Windows, macOS and FreeBSD for free, including ARM architecture!</b></p>
-
-        <a
-          href="/features"
-          title="Features"
-          class="md-button"
-        >
-          Learn More
-        </a>
+        <h2>Hi, I'm <b>Laxmi Kant</b></h2>
+        <p>Android engineer and Kotlin enthusiast sharing what I learn while building apps and practicing DSA.</p>
+        <p>I post short writeups, code snippets, and experiments as I go—no fluff, just the essentials.</p>
+        <p><b>The latest 10 posts below update automatically from this repo.</b></p>
       </div>
     </div>
   </div>
@@ -95,52 +94,81 @@
   <div class="md-grid md-typeset">
     <div class="tx-landing">
       <div class="tx-landing__quotes">
-        <h2>Trusted by Companies</h2>
-        <figure class="tx-landing__quote">
-          <a href="https://www.sonarsource.com/">
-            <img src="/assets/images/logos/sonar.png">
-          </a>
-          <blockquote>
-            Cirrus CI is a CI engine that was built "How we would have done it at SonarSource if we had the bandwidth
-            and the people"
-          </blockquote>
-          <figcaption>Olivier Gaudin, CEO & Co-Founder</figcaption>
-        </figure>
-        <figure class="tx-landing__quote">
-          <a href="https://smartrent.com/">
-            <img src="/assets/images/logos/smartrent.png">
-          </a>
-          <blockquote>
-            SmartRent has been using Cirrus CI since 2018 and in that time our CI needs have grown considerably; Cirrus
-            CI has allowed us to grow without having to scale our CI solution or worry about maintenance and updates.
-            Cirrus CI has also been very responsive to questions and worked with us to implement new features or show us
-            the best way to use Cirrus CI to fit our needs.
-          </blockquote>
-          <figcaption>Matt Lorey, Vice President, Technology</figcaption>
-        </figure>
-        <figure class="tx-landing__quote">
-          <a href="https://podman.io/">
-            <img src="/assets/images/logos/podman.png">
-          </a>
-          <blockquote>
-            The speed, reliability, and flexibility of Cirrus CI has been
-            outstanding for the Podman team. Configuration has been easy to manage,
-            with minimal duplication. Direct integration with our cloud resources
-            has allowed us to both scale and maintain great low-level observability.
-          </blockquote>
-          <figcaption>Chris Evich, Senior Quality Assurance Engineer</figcaption>
-        </figure>
-        <a
-          href="/guide/quick-start/"
-          title="Go to Quick Start"
-          class="md-button"
-        >
-          Quick Start
-        </a>
+        <h2>About Me</h2>
+        <p>I build Android apps in Kotlin, practice DSA daily, and share concise tutorials and experiments.</p>
+        <p>Currently exploring clean architecture, Compose, and CI/CD for mobile.</p>
+      </div>
+    </div>
+  </div>
+  <div class="md-grid md-typeset">
+    <div class="tx-landing">
+      <div class="tx-landing__quotes">
+        <h2>Recent Posts</h2>
+        <p id="posts-status">Loading latest posts…</p>
+        <ul id="recent-posts" class="tx-landing__recent"></ul>
       </div>
     </div>
   </div>
 </section>
+<script>
+  (function() {
+    const repo = "lkant8/lkant8.github.io";
+    const branch = "master";
+    const contentPath = "docs/blogs";
+    const listEl = document.getElementById("recent-posts");
+    const statusEl = document.getElementById("posts-status");
+
+    const toSiteUrl = (path) => {
+      // docs/blogs/foo.md -> /blogs/foo/
+      const clean = path.replace(/^docs\\//, "").replace(/\\.md$/, "/");
+      return `/${clean}`;
+    };
+
+    async function fetchJson(url) {
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(res.statusText);
+      return res.json();
+    }
+
+    async function loadPosts() {
+      try {
+        const contents = await fetchJson(`https://api.github.com/repos/${repo}/contents/${contentPath}?ref=${branch}`);
+        const mdFiles = contents.filter(item => item.type === "file" && item.name.endsWith(".md"));
+
+        if (!mdFiles.length) {
+          statusEl.textContent = "No posts yet. Add Markdown files under docs/blogs/ and they'll show up automatically.";
+          return;
+        }
+
+        const withDates = await Promise.all(mdFiles.map(async (file) => {
+          try {
+            const commits = await fetchJson(`https://api.github.com/repos/${repo}/commits?path=${contentPath}/${file.name}&per_page=1&sha=${branch}`);
+            const date = commits[0]?.commit?.author?.date || null;
+            return { name: file.name.replace(/\\.md$/, ""), url: toSiteUrl(file.path), date };
+          } catch (_) {
+            return { name: file.name.replace(/\\.md$/, ""), url: toSiteUrl(file.path), date: null };
+          }
+        }));
+
+        withDates.sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0));
+        const latest = withDates.slice(0, 10);
+
+        listEl.innerHTML = "";
+        latest.forEach(post => {
+          const li = document.createElement("li");
+          const dateText = post.date ? ` — ${new Date(post.date).toLocaleDateString()}` : "";
+          li.innerHTML = `<a href="${post.url}">${post.name}</a><span class="post-date">${dateText}</span>`;
+          listEl.appendChild(li);
+        });
+        statusEl.textContent = "";
+      } catch (err) {
+        statusEl.textContent = "Unable to load posts right now (GitHub API rate limit or connectivity).";
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", loadPosts);
+  })();
+</script>
 {% endblock %}
 
 <!-- Content -->
