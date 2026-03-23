@@ -8,6 +8,7 @@ edit_uri: edit/master/docs/
 theme:
   name: material
   language: en
+  custom_dir: theme/overrides
 
   palette:
     - scheme: default
