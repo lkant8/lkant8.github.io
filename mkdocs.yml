@@ -1,129 +1,49 @@
-repo_url: https://github.com/cirruslabs/cirrus-ci-docs/
-site_url: https://cirrus-ci.org
-edit_uri: blob/main/docs/
-
 site_name: laxmikant.dev
-site_author: Laxmi kant
-copyright: © laxmikant.dev 2026-present
-site_description: >
-  laxmikant.dev is posting Youtube video code details and other DSA blogs.
+site_description: DSA + App Development + YouTube Code
+site_author: Laxmi Kant
 
-remote_branch: main
+repo_url: https://github.com/lkant8/lkant8.github.io
+edit_uri: edit/main/docs/
 
 theme:
-  name: 'material'
-  custom_dir: 'theme'
-  favicon: 'assets/images/favicon.ico'
-  logo: 'assets/images/logo.svg'
-  icon:
-    repo: fontawesome/brands/github
+  name: material
   language: en
+
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
-      toggle:
-        icon: material/weather-night
-        name: Switch to light mode
     - scheme: slate
       primary: indigo
       accent: indigo
-      toggle:
-        icon: material/weather-sunny
-        name: Switch to dark mode
-  font:
-    text: Roboto
-    code: Roboto Mono
+
   features:
-    - announce.dismiss
-    - content.tabs.link
-    - content.code.annotate
     - navigation.tabs
-    - navigation.tabs.sticky
     - navigation.top
     - search.suggest
-    - toc.follow
-
-extra_css:
-  - 'stylesheets/extra.css'
-  - 'stylesheets/landing.css'
+    - content.code.copy
+    - content.tabs.link
 
 plugins:
-  - blog
   - search
-  - minify
-  - git-revision-date-localized:
-      enable_creation_date: true
-      fallback_to_build_date: true
+  - blog
 
 markdown_extensions:
-  - markdown.extensions.admonition
-  - markdown.extensions.codehilite:
-      guess_lang: false
-  - markdown.extensions.def_list
-  - markdown.extensions.footnotes
-  - markdown.extensions.meta
-  - markdown.extensions.toc:
+  - admonition
+  - toc:
       permalink: true
-  - pymdownx.arithmatex
-  - pymdownx.betterem:
-      smart_enable: all
-  - pymdownx.caret
-  - pymdownx.critic
-  - pymdownx.details
-  - pymdownx.emoji:
-      emoji_generator: !!python/name:pymdownx.emoji.to_svg
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.highlight
   - pymdownx.superfences
-  - pymdownx.keys
-  - pymdownx.magiclink
-  - pymdownx.mark
-  - pymdownx.smartsymbols
-  - pymdownx.tabbed:
-      alternate_style: true
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.tilde
+  - pymdownx.tabbed
 
 nav:
   - Home: index.md
-  - Features: features.md
-  - Documentation:
-      - 'User Guide':
-          - 'Quick Start': guide/quick-start.md
-          - 'Writing Tasks': guide/writing-tasks.md
-          - 'Programming Tasks in Starlark': guide/programming-tasks.md
-          - 'Configuration Tips and Tricks': guide/tips-and-tricks.md
-          - 'Execution Environment':
-              - 'Linux Containers': guide/linux.md
-              - 'Windows Containers': guide/windows.md
-              - 'macOS VMs': guide/macOS.md
-              - 'FreeBSD VMs': guide/FreeBSD.md
-              - 'Persistent Workers': guide/persistent-workers.md
-              - 'Docker Builder on VM': guide/docker-builder-vm.md
-              - 'Docker Builds on GKE': guide/docker-builds-on-kubernetes.md
-              - 'Docker Pipe': guide/docker-pipe.md
-              - 'Custom VMs': guide/custom-vms.md
-              - 'Computing Services': guide/supported-computing-services.md
-          - 'Life of a Build': guide/build-life.md
-          - 'Notifications': guide/notifications.md
-      - API: api.md
-      - FAQ: faq.md
-      - Legal:
-          - 'Privacy': legal/privacy.md
-          - 'Terms of Service': legal/terms.md
-      - Security: security.md
-  - Examples: examples.md
-  - Pricing: pricing.md
-  - Support: support.md
-  - Blog:
-    - blog/index.md
-  - Go to App: https://cirrus-ci.com/
 
-extra:
-  social:
-    - icon: fontawesome/brands/twitter
-      link: 'https://twitter.com/alwayslaxmikant'
+  - DSA:
+      - Factorial: dsa/factorial.md
+      - Missing Number: dsa/missing-number.md
+
+  - Blog:
+      - blog/index.md
+
+  - About: about.md

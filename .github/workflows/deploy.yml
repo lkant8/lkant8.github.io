@@ -3,26 +3,29 @@ name: Deploy MkDocs Site
 on:
   push:
     branches:
-      - main   # change to main
+      - main   # make sure your branch is main
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      # 1️⃣ Checkout your repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Set up Python
+      # 2️⃣ Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: 3.x
 
+      # 3️⃣ Install dependencies (IMPORTANT 🔥)
       - name: Install dependencies
-        run: pip install mkdocs-material
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-blog-plugin
 
-      - name: Build site
-        run: mkdocs build
-
-      - name: Deploy to GitHub Pages
+      # 4️⃣ Build and Deploy
+      - name: Deploy site
         run: mkdocs gh-deploy --force
