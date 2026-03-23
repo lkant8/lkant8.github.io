@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Report a laxmikant.dev CI bug
+about: Report a laxmikant.dev bug
 labels: bug
 assignees: ""
 ---
