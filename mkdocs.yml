@@ -3,7 +3,7 @@ site_description: DSA + App Development + YouTube Code
 site_author: Laxmi Kant
 
 repo_url: https://github.com/lkant8/lkant8.github.io
-edit_uri: edit/main/docs/
+edit_uri: edit/master/docs/
 
 theme:
   name: material
