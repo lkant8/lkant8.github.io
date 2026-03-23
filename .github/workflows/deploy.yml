@@ -5,14 +5,20 @@ on:
     branches:
       - main   # make sure your branch is main
 
+# Allow the workflow to push the built site to the gh-pages branch
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout your repo
+      # 1️⃣ Checkout your repo (needs full history so gh-deploy can push gh-pages)
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       # 2️⃣ Setup Python
       - name: Setup Python
@@ -26,6 +32,8 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-blog-plugin
 
-      # 4️⃣ Build and Deploy
+      # 4️⃣ Build and Deploy to gh-pages using the GitHub token
       - name: Deploy site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: mkdocs gh-deploy --force
