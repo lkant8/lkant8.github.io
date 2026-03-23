@@ -1,4 +1,6 @@
-pymdown-extensions
+pymdown-extensions>=10,<11
+mkdocs>=1.5,<2.0
+mkdocs-material>=9,<10
 mkdocs-git-revision-date-localized-plugin
 mkdocs-minify-plugin
 mkdocs-blog-plugin
