@@ -27,7 +27,6 @@ theme:
 
 plugins:
   - search
-  - blog
 
 markdown_extensions:
   - admonition
@@ -42,9 +41,7 @@ nav:
 
   - DSA:
       - Factorial: dsa/factorial.md
-      - Missing Number: dsa/missing-number.md
-
-  - Blog:
-      - blog/index.md
-
-  - About: about.md
+  - Kotlin: kotlin.md
+  - Android: android.md
+  - Portfolio: portfolio.md
+  - Blogs: blogs.md

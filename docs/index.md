@@ -1,4 +1,4 @@
 ---
 template: home.html
-title: Cirrus CI
+title: Home
 ---
