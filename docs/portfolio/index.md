@@ -1,4 +1,6 @@
-# Hi, Laxmi Kant Pal
+# Portfolio
+
+## Hi, Laxmi Kant Pal
 
 Senior Android Developer based in Gurugram, India, with 6 years of experience building native Android products using Kotlin/Java, MVVM, Jetpack Compose, SSL pinning, Ktor, and coroutines.
 
