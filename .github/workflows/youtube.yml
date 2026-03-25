@@ -1,0 +1,52 @@
+name: Fetch YouTube Videos
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"  # every 6 hours
+  workflow_dispatch:
+
+jobs:
+  fetch-videos:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Fetch YouTube feed
+        run: |
+          curl -s "https://www.youtube.com/feeds/videos.xml?channel_id=UCdbUomS4yFXN9D3_ZLtJJUg" > feed.xml
+
+      - name: Parse feed and create YAML
+        run: |
+          python3 <<EOF
+          import xml.etree.ElementTree as ET
+          import yaml
+
+          tree = ET.parse('feed.xml')
+          root = tree.getroot()
+
+          ns = {'yt': 'http://www.youtube.com/xml/schemas/2015'}
+
+          videos = []
+
+          for entry in root.findall('{http://www.w3.org/2005/Atom}entry')[:5]:
+              video_id = entry.find('yt:videoId', ns).text
+              title = entry.find('{http://www.w3.org/2005/Atom}title').text
+
+              videos.append({
+                  "id": video_id,
+                  "title": title
+              })
+
+          with open("docs/data/youtube.yml", "w") as f:
+              yaml.dump({"videos": videos}, f)
+          EOF
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add docs/data/youtube.yml
+          git commit -m "Update YouTube videos" || echo "No changes"
+          git push

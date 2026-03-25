@@ -109,7 +109,14 @@
     <div class="tx-landing__quotes">
       <h2>🎥 Latest Videos</h2>
 
-      <div class="youtube-grid" id="youtube-videos"></div>
+      <div class="youtube-grid">
+  {% for video in data.youtube.videos %}
+    <a href="https://youtube.com/watch?v={{ video.id }}" target="_blank">
+      <img src="https://img.youtube.com/vi/{{ video.id }}/hqdefault.jpg" />
+      <p>{{ video.title }}</p>
+    </a>
+  {% endfor %}
+</div>
 
       <p style="margin-top:10px;">
         <a href="https://youtube.com/@alwayslaxmikant" target="_blank">

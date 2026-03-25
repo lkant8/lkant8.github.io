@@ -1,6 +1,6 @@
-site_name: Laxmi Kant Pal
+site_name: Laxmi Kant
 site_description: Senior Android Developer portfolio for Laxmi Kant Pal in Gurugram, India.
-site_author: Laxmi Kant Pal
+site_author: lkant8
 site_url: https://lkant8.github.io/
 repo_url: https://github.com/lkant8/lkant8.github.io
 repo_name: lkant8/lkant8.github.io
@@ -46,6 +46,7 @@ theme:
 
 plugins:
   - search
+  - macros
 
 markdown_extensions:
   - admonition
