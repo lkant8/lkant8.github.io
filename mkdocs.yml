@@ -68,16 +68,16 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/laxmikantpal
+      link: https://github.com/lkant8
       name: GitHub
     - icon: fontawesome/brands/linkedin
-      link: https://linkedin.com/in/laxmikantpal
+      link: https://www.linkedin.com/in/lkant/
       name: LinkedIn
     - icon: fontawesome/brands/youtube
-      link: https://youtube.com/@laxmikantpal
+      link: https://youtube.com/@alwayslaxmikant
       name: YouTube
     - icon: fontawesome/brands/x-twitter
-      link: https://x.com/laxmikantpal
+      link: https://x.com/alwayslaxmikant
       name: X
 
 nav:

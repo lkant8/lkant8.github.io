@@ -1,6 +1,32 @@
-# Projects
+## Production Projects
 
-This page expands on the portfolio highlights with architecture, engineering decisions, and delivery focus areas.
+### Mint by Investwell
+
+- Wealth management platform used by brokers and clients
+- Integrated CAS import and portfolio tracking
+- Built SDK used across multiple apps (10M+ users)
+
+### Share India
+
+- Trading app with order scheduling and option chain tracking
+- Real-time financial data handling
+- High-performance UI for traders
+
+### Alpha Capital
+
+- Investment tracking for equity, MF, and property
+- Clean UI + financial insights
+
+### TVC Courier System
+
+- Real-time package tracking system
+- Driver + admin + user modules
+- Geo-location + live updates
+
+### Akoya Plus Business
+
+- Service marketplace app (CCTV, painting, etc.)
+- Booking + tracking + service management
 
 ## Secure Payment App
 
@@ -44,10 +70,10 @@ This page expands on the portfolio highlights with architecture, engineering dec
 
 === "Engineering"
 
-    - Fine-tuned LLM workflow for chat use cases
-    - Android interface optimized for message rendering and responsive interactions
-    - Product-centric work on prompts, context handling, and response quality
-    - Practical experimentation with AI/ML for real mobile scenarios
+- Deep learning + LLM-based chatbot system
+- Focus on real-world mobile AI use cases
+- Prompt engineering + response optimization
+- Designed for scalable mobile AI UX
 
 === "What makes it strong"
 
