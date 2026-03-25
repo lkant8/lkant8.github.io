@@ -168,6 +168,28 @@
 
     document.addEventListener("DOMContentLoaded", loadPosts);
   })();
+
+  (async function() {
+  const feedUrl = "https://www.youtube.com/feeds/videos.xml?channel_id=alwayslaxmikant";
+  const api = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feedUrl);
+
+  const res = await fetch(api);
+  const data = await res.json();
+
+  const container = document.createElement("div");
+  container.className = "youtube-grid";
+
+  data.items.slice(0, 5).forEach(video => {
+    const id = video.link.split("v=")[1];
+    const iframe = document.createElement("iframe");
+    iframe.src = `https://www.youtube.com/embed/${id}`;
+    iframe.allowFullscreen = true;
+    container.appendChild(iframe);
+  });
+
+  document.querySelector(".tx-landing__quotes:last-child").appendChild(container);
+})();
+
 </script>
 {% endblock %}
 
