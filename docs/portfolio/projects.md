@@ -29,7 +29,7 @@ This page expands on the portfolio highlights with architecture, engineering dec
 === "Links"
 
     - GitHub/Play link: replace with exact URL
-    - Portfolio summary: [Home](portfolio.md#featured-projects)
+    <!-- - Portfolio summary: [Home](portfolio.md#featured-projects) -->
 
 ## AI Chatbot
 
@@ -58,7 +58,7 @@ This page expands on the portfolio highlights with architecture, engineering dec
 === "Links"
 
     - GitHub: replace with exact repository URL
-    - Portfolio summary: [Home](portfolio.md#featured-projects)
+    <!-- - Portfolio summary: [Home](portfolio.md#featured-projects) -->
 
 ## DSA/CP Solver App
 
@@ -83,7 +83,7 @@ This page expands on the portfolio highlights with architecture, engineering dec
 === "Links"
 
     - GitHub: replace with exact repository URL
-    - Portfolio summary: [Home](portfolio.md#featured-projects)
+    <!-- - Portfolio summary: [Home](portfolio.md#featured-projects) -->
 
 ## Open Source Direction
 
