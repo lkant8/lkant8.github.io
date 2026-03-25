@@ -70,27 +70,40 @@ Senior Android Developer based in Gurugram, India, with 6 years of experience bu
 
 === "Social"
 
-    - GitHub: [github.com/laxmikantpal](https://github.com/lkant8)
-    - LinkedIn: [linkedin.com/in/laxmikantpal](https://linkedin.com/in/lkant)
-    - YouTube: [youtube.com/@laxmikantpal](https://youtube.com/@alwayslaxmikant)
-    - X: [@laxmikantpal](https://x.com/alwayslaxmikant)
+    - GitHub: [github.com/lkant8](https://github.com/lkant8)
+    - LinkedIn: [linkedin.com/in/lkant](https://linkedin.com/in/lkant)
+    - YouTube: [youtube.com/@alwayslaxmikant](https://youtube.com/@alwayslaxmikant)
+    - X: [@alwayslaxmikant](https://x.com/alwayslaxmikant)
 
 ## Experience Timeline
 
-### Senior Android Developer • Company B • 2023 to now
+### Senior Android Developer • Investwell (Excelnet Solutions Pvt Ltd) • 2022 to now
 
-- Built and maintained native Android features with Kotlin, Compose, coroutines, and MVVM.
-- Improved security-sensitive networking flows with SSL pinning and resilient API layers.
-- Worked on production UX, performance tuning, release quality, and scalable architecture.
+- Built and published 8+ financial Android apps on Play Store.
+- Developed Mint SDK (Native + Flutter) used by 10M+ weekly users.
+- Implemented advanced security: SSL pinning, root/emulator detection, ciphertext encryption.
+- Worked on Jetpack Compose + MVVM for scalable and maintainable architecture.
+- Delivered production-grade features with strong focus on performance and reliability.
 
-### Android Developer • Company A • 2020 to 2023
+### Android Developer • Affinity Education • 2021 to 2022
 
-- Delivered Android app features in Kotlin/Java across UI, networking, and business logic layers.
-- Implemented reusable modules, handled complex API integration, and supported app releases.
-- Strengthened app reliability through better state handling, testing discipline, and debugging.
+- Built interactive quiz system (image, audio, MCQs).
+- Implemented live classes + real-time chat using WebSockets.
+- Developed CRM app with task management and real-time updates.
+- Focused on e-learning scalability and smooth UX.
 
-!!! tip "Employer names"
-    Replace `Company A` and `Company B` with the exact workplace names when ready.
+### Android Developer • WebCoir IT Solutions • 2019 to 2021
+
+- Delivered 3+ production apps with geo-location tracking.
+- Worked on US-based courier tracking system (driver + admin + user apps).
+- Integrated payment gateways: Stripe, Razorpay, Paytm.
+- Applied MVVM & MVP architectures.
+
+### Android Intern • Rounderlabs • 2019
+
+- Integrated Firebase (Firestore, FCM) and REST APIs.
+- Built MCQ modules and payment flows.
+- Debugged and optimized app performance.
 
 ## Featured Projects
 
@@ -176,21 +189,21 @@ Senior Android Developer based in Gurugram, India, with 6 years of experience bu
 
 ## Highlights
 
-- 6 years of native Android delivery across Kotlin/Java codebases
-- Strong foundation in DSA and Competitive Programming
-- Experience spanning app security, UI architecture, networking, and AI-enabled chat products
-- Android/AI tutorials published on YouTube
+- 6+ years of Android development experience (Kotlin/Java)
+- Built apps & SDKs serving 10M+ users
+- Strong expertise in app security (SSL pinning, VAPT fixes)
+- Experience across finance, e-learning, delivery, and real-time systems
+- AI/ML + LLM integration for mobile apps
+- Android + AI content creator on YouTube
 
 ## YouTube
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe
-    src="https://www.youtube.com/embed?listType=user_uploads&list=laxmikantpal"
-    title="Laxmi Kant Pal YouTube"
+    src="https://www.youtube.com/embed/kSIRFdmBrx4"
+    title="YouTube video"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
     loading="lazy"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
   </iframe>
 </div>

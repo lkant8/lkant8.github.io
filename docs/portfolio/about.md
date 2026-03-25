@@ -2,7 +2,11 @@
 
 ## Profile
 
-Laxmi Kant Pal is a Senior Android Developer from Gurugram, India, with 6 years of native Android experience across Kotlin/Java, MVVM, Jetpack Compose, SSL pinning, Ktor, and coroutines.
+Laxmi Kant Pal is a Senior Android Developer based in Gurugram, India, with 6+ years of experience building scalable Android applications across finance, e-learning, delivery, and real-time systems.
+
+He has delivered 20+ apps and multiple SDKs, including systems serving over 10M+ users. His expertise includes Kotlin, Jetpack Compose, MVVM architecture, and advanced app security practices like SSL pinning and VAPT compliance.
+
+Alongside Android development, he is actively working in AI/ML and Deep Learning, focusing on LLM-based applications, chatbot systems, and mobile-first AI experiences.
 
 ## Education
 
@@ -10,30 +14,32 @@ Laxmi Kant Pal is a Senior Android Developer from Gurugram, India, with 6 years 
 
 ## Work
 
-- Company A | Android Developer | 2020 to 2023
-- Company B | Senior Android Developer | 2023 to now
-
-!!! tip "Customize these lines"
-    Replace `Company A`, `Company B`, and the college placeholder with the exact real names before publishing widely.
+- Investwell (Excelnet Solutions Pvt Ltd) | Senior Android Developer | 2022 – Present
+- Affinity Education | Android Developer | 2021 – 2022
+- WebCoir IT Solutions | Android Developer | 2019 – 2021
+- Rounderlabs | Android Intern | 2019
 
 ## Strengths
 
-- Native Android app development with strong architecture fundamentals
-- DSA and Competitive Programming
-- AI/ML with LLM fine-tuning for chat apps
-- Secure networking and performance-aware mobile engineering
+- Advanced Android development with clean architecture (MVVM, Compose)
+- SDK development (Native + Flutter)
+- Strong DSA & problem-solving skills
+- App security (SSL pinning, root detection, VAPT fixes)
+- AI/ML & Deep Learning (LLMs, chatbot systems, mobile AI UX)
+- Real-time systems (WebSockets, chat, live streaming)
 
 ## Social
 
-- GitHub: [github.com/laxmikantpal](https://github.com/laxmikantpal)
-- LinkedIn: [linkedin.com/in/laxmikantpal](https://linkedin.com/in/laxmikantpal)
-- YouTube: [youtube.com/@laxmikantpal](https://youtube.com/@laxmikantpal)
-- X: [@laxmikantpal](https://x.com/laxmikantpal)
+- GitHub: [github.com/lkant8](https://github.com/lkant8)
+- LinkedIn: [linkedin.com/in/lkant](https://www.linkedin.com/in/lkant/)
+- YouTube: [youtube.com/@alwayslaxmikant](https://youtube.com/@alwayslaxmikant)
+- X: [@alwayslaxmikant](https://x.com/alwayslaxmikant)
 
 ## Contact
 
 - Location: Gurugram, India
-- Best starting point: GitHub, LinkedIn, or YouTube
+- Email: laxmipalkant01@gmail.com
+- Portfolio: https://lkant8.github.io
 
 ## Contact Form
 
