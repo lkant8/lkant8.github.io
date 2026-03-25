@@ -1,47 +1,95 @@
-site_name: laxmikant.dev
-site_description: DSA + App Development + YouTube Code
-site_author: Laxmi Kant
-
+site_name: Laxmi Kant Pal
+site_description: Senior Android Developer portfolio for Laxmi Kant Pal in Gurugram, India.
+site_author: Laxmi Kant Pal
+site_url: https://lkant8.github.io/
 repo_url: https://github.com/lkant8/lkant8.github.io
+repo_name: lkant8/lkant8.github.io
 edit_uri: edit/master/docs/
+use_directory_urls: true
 
 theme:
   name: material
   language: en
   custom_dir: theme/overrides
-
+  favicon: assets/images/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
   palette:
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: indigo
-      accent: indigo
-    - scheme: slate
+      accent: cyan
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
       primary: indigo
-      accent: indigo
-
+      accent: cyan
+      toggle:
+        icon: material/white-balance-sunny
+        name: Switch to light mode
   features:
     - navigation.tabs
+    - navigation.sections
     - navigation.top
+    - navigation.instant
+    - navigation.tracking
+    - navigation.path
+    - search.highlight
+    - search.share
     - search.suggest
     - content.code.copy
     - content.tabs.link
+    - content.action.edit
+    - toc.follow
 
 plugins:
   - search
 
 markdown_extensions:
   - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
   - toc:
       permalink: true
-  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
   - pymdownx.superfences
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/laxmikantpal
+      name: GitHub
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/laxmikantpal
+      name: LinkedIn
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@laxmikantpal
+      name: YouTube
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/laxmikantpal
+      name: X
 
 nav:
   - Home: index.md
-
   - DSA:
       - Factorial: dsa/factorial.md
   - Kotlin: kotlin.md
   - Android: android.md
   - Portfolio: portfolio.md
   - Blogs: blogs.md
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
+
+copyright: Copyright &copy; 2026 Laxmi Kant Pal
