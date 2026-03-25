@@ -86,7 +86,7 @@ nav:
       - Factorial: dsa/factorial.md
   - Kotlin: kotlin.md
   - Android:
-    - android/android.md
+    - android/index.md
     - OnBaack Press: onbackpress.md
   - Portfolio:
     - portfolio/index.md
