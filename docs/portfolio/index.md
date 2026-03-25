@@ -2,8 +2,8 @@
 
 Senior Android Developer based in Gurugram, India, with 6 years of experience building native Android products using Kotlin/Java, MVVM, Jetpack Compose, SSL pinning, Ktor, and coroutines.
 
-[GitHub](https://github.com/laxmikantpal){ .md-button .md-button--primary }
-[Resume](../resume_of_laxmi_kant.pdf){ .md-button }
+[GitHub](https://github.com/lkant8){ .md-button .md-button--primary }
+<!-- [Resume](../resume_of_laxmi_kant.pdf){ .md-button } -->
 [Project Deep Dive](projects.md){ .md-button }
 
 ![Laxmi Kant Pal profile placeholder](https://placehold.co/720x420/1a237e/00bcd4?text=Laxmi+Kant+Pal+%7C+Senior+Android+Developer){ width="720" loading="lazy" }
@@ -68,10 +68,10 @@ Senior Android Developer based in Gurugram, India, with 6 years of experience bu
 
 === "Social"
 
-    - GitHub: [github.com/laxmikantpal](https://github.com/laxmikantpal)
-    - LinkedIn: [linkedin.com/in/laxmikantpal](https://linkedin.com/in/laxmikantpal)
-    - YouTube: [youtube.com/@laxmikantpal](https://youtube.com/@laxmikantpal)
-    - X: [@laxmikantpal](https://x.com/laxmikantpal)
+    - GitHub: [github.com/laxmikantpal](https://github.com/lkant8)
+    - LinkedIn: [linkedin.com/in/laxmikantpal](https://linkedin.com/in/lkant)
+    - YouTube: [youtube.com/@laxmikantpal](https://youtube.com/@alwayslaxmikant)
+    - X: [@laxmikantpal](https://x.com/alwayslaxmikant)
 
 ## Experience Timeline
 
