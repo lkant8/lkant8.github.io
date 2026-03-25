@@ -87,9 +87,9 @@ nav:
   - Kotlin: kotlin.md
   - Android: android.md
   - Portfolio:
-      - Overview: portfolio.md
-      - About Me: portfolio/about.md
-      - Projects: portfolio/projects.md
+    - portfolio/index.md
+    - About: portfolio/about.md
+    - Projects: portfolio/projects.md
   - Blogs: blogs.md
 
 extra_css:
