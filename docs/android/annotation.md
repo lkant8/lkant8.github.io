@@ -119,6 +119,123 @@ fun LoginScreenPreview() {
 
 ---
 
+
+[View On Github](https://github.com/lkant8/compose-mvvm/blob/706800a8e03ef90c0dd47a88852f5c1275bbd429/app/src/main/java/com/example/mycomposable/utils/UiRenderView.kt#L8-L104)
+
+```kotlin
+@Preview(
+    name = "Pixel 4 - Light Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_NO,
+    fontScale = 0.75f,
+    device = "id:pixel_4"
+)
+@Preview(
+    name = "Pixel 4 - Dark Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_YES,
+    fontScale = 0.75f,
+    device = "id:pixel_4"
+)
+@Preview(
+    name = "Pixel 5 - Light Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_NO,
+    fontScale = 0.75f,
+    device = "id:pixel_5"
+)
+@Preview(
+    name = "Pixel 5 - Dark Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_YES,
+    fontScale = 0.75f,
+    device = "id:pixel_5"
+)
+@Preview(
+    name = "Foldable - Light Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_NO,
+    fontScale = 1.5f,
+    device = "id:pixel_fold"
+)
+@Preview(
+    name = "Foldable - Dark Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_YES,
+    fontScale = 1.5f,
+    device = "id:pixel_fold"
+)
+@Preview(
+    name = "7in Foldable - Light Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_NO,
+    fontScale = 1.5f,
+    device = "id:6.7in Foldable"
+)
+@Preview(
+    name = "7in Foldable - Dark Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_YES,
+    fontScale = 1.5f,
+    device = "id:6.7in Foldable"
+)
+@Preview(
+    name = "Tablet - Portrait - Light Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_NO,
+    fontScale = 1.0f,
+    device = "id:10.1in WXGA (Tablet)"
+)
+@Preview(
+    name = "Tablet - Portrait - Dark Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_YES,
+    fontScale = 1.0f,
+    device = "id:10.1in WXGA (Tablet)"
+)
+@Preview(
+    name = "Tablet - Landscape - Light Mode",
+    showSystemUi = true,
+    showBackground = true,
+    uiMode = UI_MODE_NIGHT_NO,
+    fontScale = 1.0f,
+    device= "id:7in WSVGA (Tablet)"
+)
+@Preview(
+    name= "Tablet - Landscape - Dark Mode",
+    showSystemUi= true,
+    showBackground= true,
+    uiMode= UI_MODE_NIGHT_YES,
+    fontScale= 1.0f,
+    device= "id:7in WSVGA (Tablet)"
+)
+annotation class AppPreviewsMultiDevice
+
+// Basic preview annotation for quick access to various devices
+@Preview(uiMode= UI_MODE_NIGHT_NO, showSystemUi= true, name= "Pixel 4", device= "id:pixel_4")
+@Preview(uiMode= UI_MODE_NIGHT_YES, showSystemUi= true, name= "Pixel 4 - Dark", device= "id:pixel_4")
+@Preview(uiMode= UI_MODE_NIGHT_YES, showSystemUi= true, name= "Pixel 5", device= "id:pixel_5")
+@Preview(uiMode= UI_MODE_NIGHT_YES, showSystemUi= true, name= "Foldable", device= "id:pixel_fold")
+@Preview(uiMode= UI_MODE_NIGHT_YES, showSystemUi= true, name= "7in Foldable", device= "id:6.7in Foldable")
+@Preview(uiMode= UI_MODE_NIGHT_YES, showSystemUi= true, name= "Tablet - Portrait", device= "id:medium_tablet")
+@Preview(uiMode= UI_MODE_NIGHT_YES, showSystemUi= true, name= "Tablet - Landscape", device= "id:10.1in WXGA (Tablet)")
+annotation class AppPreviews
+
+```
+
+
+
+
 ## Summary Checklist
 
 * [ ] Use **Annotation Classes** for metadata, not logic.
