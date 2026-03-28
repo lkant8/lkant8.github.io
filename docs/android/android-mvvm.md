@@ -636,5 +636,12 @@ class MainActivity : ComponentActivity() {
 
 ## 16. References
 - Official Android docs (ViewModel, Hilt, Room, Navigation Compose, Coroutines).
-- Community patterns and MVVM rationale (e.g., GeeksforGeeks article). citeturn0search0
+
+## 🚀 Connect & Support
+
+If you found this guide helpful and want to master Android development, Kotlin, and AI integration, let's connect\!
+
+  * **Subscribe for more Dev Content:** [YouTube @alwayslaxmikant](https://www.google.com/search?q=https://youtube.com/alwayslaxmikant) 🔔
+  * **Get real-time updates:** [X (Twitter) @alwayslaxmikant](https://x.com/alwayslaxmikant) 🐦
+  * **Follow on Instagram:** [Instagram @alwayslaxmikant](https://www.google.com/search?q=https://instagram.com/alwayslaxmikant) 📸
 
