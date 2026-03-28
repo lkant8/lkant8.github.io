@@ -77,3 +77,11 @@ return n * factorial(n - 1);
 ```
 Reduces the problem size
 Calls function again with smaller value
+
+
+## Social
+
+- GitHub: [github.com/lkant8](https://github.com/lkant8)
+- LinkedIn: [linkedin.com/in/lkant](https://www.linkedin.com/in/lkant/)
+- YouTube: [youtube.com/@alwayslaxmikant](https://youtube.com/@alwayslaxmikant)
+- X: [@alwayslaxmikant](https://x.com/alwayslaxmikant)
