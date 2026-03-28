@@ -943,3 +943,12 @@ fun quickSelect(a:IntArray, k:Int): Int {
 - When to use: Median, percentile queries.
 - Common mistakes: Off-by-one in target index (k zero vs one based).
 
+
+
+## 🚀 Connect & Support
+
+If you found this guide helpful and want to master Android development, Kotlin, and AI integration, let's connect\!
+
+  * **Subscribe for more Dev Content:** [YouTube @alwayslaxmikant](https://www.google.com/search?q=https://youtube.com/alwayslaxmikant) 🔔
+  * **Get real-time updates:** [X (Twitter) @alwayslaxmikant](https://x.com/alwayslaxmikant) 🐦
+  * **Follow on Instagram:** [Instagram @alwayslaxmikant](https://www.google.com/search?q=https://instagram.com/alwayslaxmikant) 📸
