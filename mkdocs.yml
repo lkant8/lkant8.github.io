@@ -88,6 +88,7 @@ nav:
   - Android:
     - android/index.md
     - OnBaack Press: android/onbackpress.md
+    - Annotation class: android/Annotation.md
   - Portfolio:
     - portfolio/index.md
     - About: portfolio/about.md

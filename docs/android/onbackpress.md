@@ -100,8 +100,6 @@ class ExampleFragment : Fragment() {
 
 ## **Get involved**
 
-
-
--  [Check out the Video](https://www.youtube.com/channel/UCdbUomS4yFXN9D3_ZLtJJUg)
-
--  [Follow on Twitter](https://twitter.com/alwayslaxmikant)
+  * **Subscribe for more Dev Content:** [YouTube @alwayslaxmikant](https://www.google.com/search?q=https://youtube.com/alwayslaxmikant) 🔔
+  * **Get real-time updates:** [X (Twitter) @alwayslaxmikant](https://x.com/alwayslaxmikant) 🐦
+  * **Follow on Instagram:** [Instagram @alwayslaxmikant](https://www.google.com/search?q=https://instagram.com/alwayslaxmikant) 📸
