@@ -83,10 +83,14 @@ extra:
 nav:
   - Home: index.md
   - DSA:
+      - MANG Asked algorithms: dsa/algorithms.md
       - Factorial: dsa/factorial.md
   - Kotlin: kotlin.md
   - Android:
     - android/index.md
+    - Kotlin Tricks: android/kotlin-tricks.md
+    - Kotlin Algorithms: android/kotlin-algorithms.md
+    - Android MVVM: android/android-mvvm.md
     - Annotation class: android/annotation.md
     - OnBaack Press: android/onbackpress.md
   - Portfolio:
