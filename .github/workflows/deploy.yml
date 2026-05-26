@@ -37,6 +37,9 @@ jobs:
       - name: Build site
         run: mkdocs build --strict
 
+      - name: Copy app-ads.txt to site root
+        run: cp docs/app-ads.txt site/app-ads.txt  
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
