@@ -103,7 +103,7 @@ nav:
     - Projects: portfolio/projects.md
   - Blogs: blogs.md
   - HealthEvo:
-    - Data Policy: datapolicy.md
+    - Data Policy: healthevo/datapolicy.md
     - Account delete: healthevo/delete_account.md
 
 extra_css:
