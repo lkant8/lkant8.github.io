@@ -35,7 +35,7 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: Copy app-ads.txt
-        run: cp app-ads.txt .site/app-ads.txt  
+        run: cp ./app-ads.txt ./site/app-ads.txt
 
       - name: Build site
         run: mkdocs build --strict
