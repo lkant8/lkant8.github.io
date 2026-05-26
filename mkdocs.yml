@@ -7,6 +7,9 @@ repo_name: lkant8/lkant8.github.io
 edit_uri: edit/master/docs/
 use_directory_urls: true
 
+hooks:
+  - hooks/copy_root_files.py
+
 theme:
   name: material
   language: en
@@ -46,6 +49,9 @@ theme:
 
 plugins:
   - search
+
+exclude_docs: |
+  app-ads.txt  
 
 markdown_extensions:
   - admonition
