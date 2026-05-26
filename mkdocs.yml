@@ -6,6 +6,8 @@ repo_url: https://github.com/lkant8/lkant8.github.io
 repo_name: lkant8/lkant8.github.io
 edit_uri: edit/master/docs/
 use_directory_urls: true
+extra_files:
+  - app-ads.txt
 
 theme:
   name: material
@@ -66,6 +68,7 @@ markdown_extensions:
 
 extra:
   generator: false
+  app_ads: true
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/lkant8
@@ -104,7 +107,6 @@ nav:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
-extra:
-  app_ads: true 
+
 
 copyright: Copyright &copy; 2026 Laxmi Kant Pal
