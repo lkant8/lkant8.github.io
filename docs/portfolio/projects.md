@@ -86,7 +86,7 @@
     - GitHub: replace with exact repository URL
     <!-- - Portfolio summary: [Home](portfolio.md#featured-projects) -->
 
-## DSA/CP Solver App
+## DSA-CP Solver App
 
 ![DSA CP Solver App placeholder](https://placehold.co/1200x675/1b1f23/00bcd4?text=DSA%2FCP+Solver+App){ loading="lazy" }
 
