@@ -7,6 +7,8 @@ repo_name: lkant8/lkant8.github.io
 edit_uri: edit/master/docs/
 use_directory_urls: true
 
+extra_files:
+  - app-ads.txt
 
 theme:
   name: material
