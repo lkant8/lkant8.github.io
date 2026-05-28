@@ -38,7 +38,19 @@ jobs:
         run: mkdocs build --strict
 
       - name: Copy app-ads.txt to site root
-        run: cp docs/app-ads.txt site/app-ads.txt  
+        run: cp docs/app-ads.txt site/app-ads.txt
+
+      - name: Copy static verification files
+        run: |
+          mkdir -p site/.well-known
+          cp docs/.well-known/assetlinks.json site/.well-known/assetlinks.json
+          cp .nojekyll site/.nojekyll
+          
+      - name: Verify generated files
+        run: |
+          ls -la site
+          ls -la site/.well-known
+          cat site/.well-known/assetlinks.json        
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
