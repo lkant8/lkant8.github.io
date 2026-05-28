@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "co.sangeet.player",
+      "sha256_cert_fingerprints": [
+        "4F:84:2A:2D:4B:5E:5C:35:DD:A8:1C:D7:41:1B:83:5E:F3:44:8A:42:31:16:93:FB:F1:6E:42:5F:03:96:32:D5"
+      ]
+    }
+  }
+]
